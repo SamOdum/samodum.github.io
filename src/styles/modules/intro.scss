@@ -1,0 +1,56 @@
+.intro {
+    background: url('/src/images/design/christopher-gower-m_HRfLhgABo-unsplash_nyftqb_ar_1_1\,c_fill\,g_auto__c_scale\,w_767.jpg') no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 820px;
+    margin-top: 0;
+    padding-top: 4%;
+}
+
+header {
+    padding: 4% 8%;
+    border-radius: 0 0 5px 5px;
+    background-color: #ffa804;
+}
+
+.intro--address,
+.intro--phone,
+.intro--email {
+    max-width: 235px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.intro--phone {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.intro-icon {
+    width: 40px;
+}
+
+.intro-msg {
+    margin-left: 0px;
+    span {
+        text-transform: uppercase;
+    }
+}
+
+.intro--download {
+    text-align: right;
+    a {
+        padding: 15px 30px;
+        border-radius: 4px;
+        margin-top: 30px;
+        box-shadow: inset 0 0 4px rgba(0, 0, 0, .3);
+        background: #ffad01;
+        color: #fff;
+        transition: all .2s ease;
+        &:hover {
+            transform: translateY(-4px);
+        }
+    }
+}
