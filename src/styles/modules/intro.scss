@@ -52,12 +52,19 @@ header {
 
 .intro-icon {
     width: 40px;
+    color: $pri-white;
 }
 
 .intro-msg {
     margin-left: 0px;
+    color: $pri-white;
+    transition: all .2s ease;
     span {
         text-transform: uppercase;
+    }
+    &:hover,
+    &:visited {
+        color: inherit;
     }
 }
 
