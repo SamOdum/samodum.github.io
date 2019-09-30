@@ -2,15 +2,37 @@
     background: url('/src/images/design/christopher-gower-m_HRfLhgABo-unsplash_nyftqb_ar_1_1\,c_fill\,g_auto__c_scale\,w_767.jpg') no-repeat;
     background-size: cover;
     width: 100%;
-    height: 820px;
+    height: 645px;
     margin-top: 0;
-    padding-top: 4%;
+    padding-top: 24.469px;
+    position: relative;
+    z-index: 1;
+    &:before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, .2)
+    }
+    // &:after {
+    //     content: '';
+    //     position: absolute;
+    //     bottom: 0;
+    //     left: 0;
+    //     right: 0;
+    //     height: 150px;
+    //     z-index: -1;
+    //     background: $pri-white;
+    // }
 }
 
 header {
     padding: 4% 8%;
     border-radius: 0 0 5px 5px;
-    background-color: #ffa804;
+    background-color: $pri-accent;
 }
 
 .intro--address,
@@ -42,15 +64,76 @@ header {
 .intro--download {
     text-align: right;
     a {
-        padding: 15px 30px;
+        padding: 4% 8%;
         border-radius: 4px;
-        margin-top: 30px;
+        margin-top: 24.469px;
         box-shadow: inset 0 0 4px rgba(0, 0, 0, .3);
-        background: #ffad01;
-        color: #fff;
+        background: $pri-accent;
+        color: $pri-white;
         transition: all .2s ease;
         &:hover {
             transform: translateY(-4px);
         }
+    }
+}
+
+.intro-profile {
+    background-color: $pri-white;
+    margin-top: 126px;
+    &__img-container {
+        height: auto;
+        width: 200px;
+        border-radius: 100px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        top: -100px;
+        margin-bottom: -80px
+    }
+    h1 {
+        font-size: 2em;
+        font-weight: 600;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    h2 {
+        font-size: 1.4em;
+        font-weight: 600;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    &-icon a {
+        text-align: center;
+        margin: 24.469px 5px;
+        height: 35px;
+        width: 35px;
+        line-height: 35px;
+        border-radius: 20px;
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+        background: $sec-dark;
+        color: $pri-white;
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            z-index: -1;
+            border-radius: 20px;
+            background: $pri-accent;
+            transition: all .2s ease;
+            transform: scale(0)
+        }
+        &:hover:after {
+            transform: scale(1);
+        }
+    }
+    &-icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
