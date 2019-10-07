@@ -1,0 +1,17 @@
+.education {
+    background-color: $sec-dark;
+    padding-bottom: 24.469px;
+    &__header {
+        background-color: $sec-dark;
+        color: $pri-white;
+    }
+    &__entry--text {
+        color: $pri-white;
+    }
+    &__entry--header-1,
+    &__entry--header-2,
+    &__entry--header-3 {
+        background-color: $sec-dark;
+        color: $pri-white;
+    }
+}

@@ -1,0 +1,11 @@
+.about {
+    background-color: $sec-dark;
+    padding-bottom: 24.469px;
+    &__header {
+        background-color: $sec-dark;
+        color: $pri-white;
+    }
+    &__text {
+        color: $pri-white;
+    }
+}
