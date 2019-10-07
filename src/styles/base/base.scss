@@ -27,3 +27,22 @@ button {
     margin-right: auto;
     width: 85%;
 }
+
+.section__header {
+    padding-top: 24.469px;
+    padding-bottom: 24.469px;
+    &-1 {
+        font-size: 1.4em;
+        font-weight: 600;
+        border-left: 4px solid $pri-accent;
+        padding-left: 8px;
+    }
+    &-2 {
+        font-size: 0.8em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $sec-dark;
+        border-left: 4px solid $pri-accent;
+        padding-left: 8px;
+    }
+}

@@ -1,0 +1,33 @@
+.portfolio__item {
+    &--image-container {
+        width: 100%;
+    }
+    &--image {
+        border-bottom: 4px solid $sec-dark;
+    }
+    &--text-container {
+        padding-top: 10px;
+        padding-bottom: 24.469px;
+    }
+    &--text {
+        hyphens: auto;
+    }
+    &--text-link-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &--text-link {
+        padding: 3% 4%;
+        font-weight: 400;
+        border-radius: 4px;
+        margin-top: 24.469px;
+        box-shadow: inset 0 0 4px rgba(0, 0, 0, .3);
+        background: $pri-accent;
+        color: $pri-white;
+        transition: all .2s ease;
+        &:hover {
+            transform: translateY(-4px);
+            color: $pri-white;
+        }
+    }
+}
