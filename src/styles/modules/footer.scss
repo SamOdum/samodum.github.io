@@ -2,4 +2,8 @@ footer {
     background-color: $pri-accent;
     color: $pri-white;
     padding: 24px 0;
+    small,
+    p {
+        font-size: 0.8em;
+    }
 }

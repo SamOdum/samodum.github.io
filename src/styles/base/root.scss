@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 100%;
     height: 100%;
@@ -9,7 +13,6 @@ html {
 
 body {
     font-size: 16px;
-    // font-family: poppins, serif;
     font-family: $para-text;
     width: 100%;
     height: 100%;
@@ -18,7 +21,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     word-wrap: break-word;
-    color: #333;
+    color: $pri-dark;
 }
 
 h1,
@@ -52,7 +55,6 @@ h6 {
 h1,
 h2,
 h3 {
-    // font-family: poppins, cursive
     font-family: $heading-text;
 }
 
@@ -60,7 +62,7 @@ p {
     line-height: 1.6;
     font-size: 1.05em;
     font-weight: 400;
-    color: #777
+    color: $text-color;
 }
 
 h1 {
@@ -96,7 +98,6 @@ button {
     text-decoration: none;
     color: inherit;
     line-height: 1;
-    -webkit-transition: all .25s ease-in-out;
     transition: all .25s ease-in-out
 }
 
@@ -108,9 +109,29 @@ button:active,
 button:hover,
 a b.light-color:hover {
     text-decoration: none;
-    color: #ffa804
+    color: $pri-accent;
 }
 
 b {
     font-weight: 600
+}
+
+img {
+    width: 100%
+}
+
+li {
+    list-style: none;
+    display: inline-block
+}
+
+span {
+    display: inline-block
+}
+
+button {
+    outline: 0;
+    border: 0;
+    background: 0 0;
+    cursor: pointer;
 }

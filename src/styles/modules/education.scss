@@ -5,13 +5,28 @@
         background-color: $sec-dark;
         color: $pri-white;
     }
-    &__entry--text {
-        color: $pri-white;
-    }
-    &__entry--header-1,
-    &__entry--header-2,
-    &__entry--header-3 {
-        background-color: $sec-dark;
-        color: $pri-white;
+    &__entry {
+        margin-top: -0.5em;
+        &--header {
+            padding-bottom: 24.469px;
+        }
+        &--header-1,
+        &--header-2,
+        &--header-3 {
+            background-color: $sec-dark;
+            color: $pri-white;
+        }
+        &--header-1 {
+            font-size: 1em;
+            font-weight: 600;
+        }
+        &--header-2 {
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        &--text {
+            margin-top: -0.5em;
+            color: $pri-white;
+        }
     }
 }
