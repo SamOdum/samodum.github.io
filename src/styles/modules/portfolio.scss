@@ -5,12 +5,23 @@
     &--image {
         border-bottom: 4px solid $sec-dark;
     }
+    // &__entry {
+    //     margin-top: -0.5em;
+    &--header {
+        padding-top: 12.2345px; //Half of section margin *24.469*
+        padding-bottom: 12.2345px;
+    }
+    &--header-1 {
+        font-size: 1em;
+        font-weight: 600;
+    }
     &--text-container {
-        padding-top: 10px;
+        margin-top: -0.5em;
         padding-bottom: 24.469px;
     }
     &--text {
         hyphens: auto;
+        margin-bottom: -0.5em;
     }
     &--text-link-container {
         display: flex;

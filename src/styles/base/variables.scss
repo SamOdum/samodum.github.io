@@ -1,9 +1,27 @@
 // COLOURS
 $pri-white: #ffffff;
+$pri-dark: #333333;
 $sec-dark: #887392;
 $pri-accent: #ffa804;
+$text-color: #777777;
 // FONT-FAMILY
 $para-text: 'Lato',
 sans-serif;
 $heading-text: 'Josefin Sans',
 sans-serif;
+
+/* HSL */
+
+$color1: hsla(10%, 59%, 25%, 1);
+$color2: hsla(290%, 3%, 64%, 1);
+$color3: hsla(29%, 43%, 53%, 1);
+$color4: hsla(336%, 11%, 36%, 1);
+$color5: hsla(223%, 24%, 32%, 1);
+
+/* RGB */
+
+$color1: rgba(101, 39, 26, 1);
+$color2: rgba(165, 160, 166, 1);
+$color3: rgba(187, 135, 85, 1);
+$color4: rgba(102, 82, 90, 1);
+$color5: rgba(62, 73, 101, 1);
