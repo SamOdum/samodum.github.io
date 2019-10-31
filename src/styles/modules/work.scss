@@ -1,3 +1,21 @@
 .work {
     padding-bottom: 24.469px;
+    &__entry {
+        margin-top: -0.5em;
+        &--header {
+            padding-bottom: 24.469px;
+        }
+        &--header-1 {
+            color: inherit;
+            font-size: 1em;
+            font-weight: 600;
+        }
+        &--header-2 {
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+        &--text {
+            margin-top: -0.5em;
+        }
+    }
 }

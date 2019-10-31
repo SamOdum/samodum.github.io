@@ -1,7 +1,7 @@
 {
     "name": "sam-odum-site",
     "version": "0.1.0",
-    "description": "Sam Odum's website.",
+    "description": "Sam Odum's portfolio website.",
     "scripts": {
         "build": "NODE_ENV=production webpack --config webpack/webpack.config.prod.js  --colors",
         "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js"

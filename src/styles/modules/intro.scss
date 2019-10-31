@@ -1,154 +1,145 @@
 .intro {
-    background: url('/src/images/design/christopher-gower-m_HRfLhgABo-unsplash_nyftqb_ar_1_1\,c_fill\,g_auto__c_scale\,w_767.jpg') no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 645px;
-    margin-top: 0;
-    // margin-bottom: 24.469px;
-    padding-top: 24.469px;
-    position: relative;
-    z-index: 1;
-    &:before {
-        content: '';
-        z-index: -1;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0, 0, 0, .2)
-    }
-    // &:after {
-    //     content: '';
-    //     position: absolute;
-    //     bottom: 0;
-    //     left: 0;
-    //     right: 0;
-    //     height: 150px;
-    //     z-index: -1;
-    //     background: $pri-white;
-    // }
+  background: url('/src/images/design/christopher-gower-m_HRfLhgABo-unsplash_nyftqb_ar_1_1\,c_fill\,g_auto__c_scale\,w_767.jpg')
+    no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 645px;
+  margin-top: 0;
+  padding-top: 24.469px;
+  position: relative;
+  z-index: 1;
+  &:before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+  }
 }
 
 .intro__header {
-    font-size: 0.8em;
-    padding: 4% 7%;
-    border-radius: 0 0 5px 5px;
-    background-color: $pri-accent;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+  padding: 4% 7%;
+  border-radius: 0 0 5px 5px;
+  background-color: $pri-accent;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .intro--address,
 .intro--phone,
 .intro--email {
-    max-width: 235px;
-    min-width: 225px;
-    margin: 4px 0;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: flex-start;
+  font-size: 0.8em;
+  max-width: 235px;
+  min-width: 225px;
+  margin: 4px 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-// .intro--phone {
-//     margin-top: 10px;
-//     margin-bottom: 10px;
-// }
 .intro-icon {
-    width: 40px;
-    color: $pri-white;
+  width: 40px;
+  color: $pri-white;
 }
 
 .intro-msg {
-    margin-left: 0px;
+  line-height: 1.2;
+  margin-left: 0px;
+  color: $pri-white;
+  transition: all 0.2s ease;
+  span {
+    text-transform: uppercase;
+  }
+  &:hover {
+    cursor: pointer;
     color: $pri-white;
-    transition: all .2s ease;
-    span {
-        text-transform: uppercase;
-    }
-    &:hover,
-    &:visited {
-        color: inherit;
-    }
+    transform: translateY(-4px);
+  }
+  &:visited {
+    color: $pri-white;
+  }
 }
 
 .intro--download {
-    text-align: right;
-    font-size: 0.8em;
-    a {
-        padding: 3% 4%;
-        font-weight: 400;
-        border-radius: 4px;
-        margin-top: 24.469px;
-        box-shadow: inset 0 0 4px rgba(0, 0, 0, .3);
-        background: $pri-accent;
-        color: $pri-white;
-        transition: all .2s ease;
-        &:hover {
-            transform: translateY(-4px);
-        }
+  text-align: right;
+  // font-size: 0.8em;
+  a {
+    padding: 3% 4%;
+    font-weight: 400;
+    border-radius: 4px;
+    margin-top: 24.469px;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+    background: $pri-accent;
+    color: $pri-white;
+    transition: all 0.2s ease;
+    &:hover {
+      transform: translateY(-4px);
     }
+  }
 }
 
 .intro-profile {
-    background-color: $pri-white;
-    margin-top: 126px;
-    &__img-container {
-        height: auto;
-        width: 200px;
-        border-radius: 100px;
-        margin: 0 auto;
-        overflow: hidden;
-        position: relative;
-        top: -100px;
-        margin-bottom: -80px
+  background-color: $pri-white;
+  margin-top: 126px;
+  &__img-container {
+    height: auto;
+    width: 200px;
+    border-radius: 100px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: -100px;
+    margin-bottom: -80px;
+  }
+  h1 {
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  h2 {
+    font-size: 1.4em;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  &-icon a {
+    text-align: center;
+    margin: 24.469px 5px;
+    height: 35px;
+    width: 35px;
+    line-height: 35px;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    background: $sec-dark;
+    color: $pri-white;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: -1;
+      border-radius: 20px;
+      background: $pri-accent;
+      transition: all 0.2s ease;
+      transform: scale(0);
     }
-    h1 {
-        font-size: 2em;
-        font-weight: 600;
-        text-transform: capitalize;
-        text-align: center;
+    &:hover:after {
+      transform: scale(1);
     }
-    h2 {
-        font-size: 1.4em;
-        font-weight: 600;
-        text-transform: capitalize;
-        text-align: center;
-    }
-    &-icon a {
-        text-align: center;
-        margin: 24.469px 5px;
-        height: 35px;
-        width: 35px;
-        line-height: 35px;
-        border-radius: 20px;
-        overflow: hidden;
-        z-index: 1;
-        position: relative;
-        background: $sec-dark;
-        color: $pri-white;
-        &:after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            top: 0;
-            z-index: -1;
-            border-radius: 20px;
-            background: $pri-accent;
-            transition: all .2s ease;
-            transform: scale(0)
-        }
-        &:hover:after {
-            transform: scale(1);
-        }
-    }
-    &-icon-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  }
+  &-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
