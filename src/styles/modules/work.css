@@ -1,0 +1,27 @@
+.work {
+  padding-bottom: 24.469px;
+}
+
+.work__entry {
+  margin-top: -0.5em;
+}
+
+.work__entry--header {
+  padding-bottom: 24.469px;
+}
+
+.work__entry--header-1 {
+  color: inherit;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.work__entry--header-2 {
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.work__entry--text {
+  margin-top: -0.5em;
+}
+/*# sourceMappingURL=work.css.map */
