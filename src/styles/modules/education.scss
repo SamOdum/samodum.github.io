@@ -10,6 +10,9 @@
         &--header {
             padding-bottom: 24.469px;
         }
+        &--header:not(:first-of-type) {
+            padding-top: 24.469px;
+        }
         &--header-1,
         &--header-2,
         &--header-3 {
